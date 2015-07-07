@@ -1,2 +1,3 @@
 Warning[2054] D:\jo\Ideonics\Repository\MODBUS_MASTER_PIC46K22\MODBUS_MASTER\source\app.c 49 : suspicious pointer conversion
-Warning[2058] D:\jo\Ideonics\Repository\MODBUS_MASTER_PIC46K22\MODBUS_MASTER\source\app.c 83 : call of function without prototype
+Warning[2054] D:\jo\Ideonics\Repository\MODBUS_MASTER_PIC46K22\MODBUS_MASTER\source\app.c 66 : suspicious pointer conversion
+Warning[2058] D:\jo\Ideonics\Repository\MODBUS_MASTER_PIC46K22\MODBUS_MASTER\source\app.c 85 : call of function without prototype

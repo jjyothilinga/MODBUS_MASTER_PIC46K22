@@ -36,8 +36,8 @@
 // is automatically updated.
 enum
 {
-  //PACKET1,
-  PACKET2,
+  PACKET1,
+  //PACKET2,
   TOTAL_NO_OF_PACKETS // leave this last entry
 };
 
@@ -62,8 +62,10 @@ void APP_init(void)
 
  	// Initialize each packet
 //	MB_construct(&packets[PACKET1], SLAVE_ID, PRESET_MULTIPLE_REGISTERS, 
-//							STARTING_ADDRESS, regCount/2, buffer);	
-		
+//								STARTING_ADDRESS, 1, buffer);	
+ 	 MB_construct(&packets[PACKET1], 1, READ_COIL_STATUS, STARTING_ADDRESS, 1, buffer);	
+
+	
 	//modbus master initialization
 	MB_init(BAUD_RATE, TIMEOUT, POLLING, RETRY_COUNT, packets, TOTAL_NO_OF_PACKETS, regs);
 
@@ -80,7 +82,7 @@ void APP_init(void)
 void APP_task(void)
 {
 					
-	MB_task();;
+	MB_task();
 
 }
 
